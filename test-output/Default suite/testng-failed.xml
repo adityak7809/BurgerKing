@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.BurgerKing.a_UpdateSavedAddressDetails">
+      <class name="com.BurgerKing.a_UpdateSavedAddressDetails_Test">
         <methods>
           <include name="logout"/>
           <include name="stopServer"/>
           <include name="startServer"/>
-          <include name="updateDetailsTest"/>
           <include name="closeApp"/>
           <include name="launchApp"/>
           <include name="login"/>
+          <include name="updateDetailsTest"/>
         </methods>
-      </class> <!-- com.BurgerKing.a_UpdateSavedAddressDetails -->
+      </class> <!-- com.BurgerKing.a_UpdateSavedAddressDetails_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
