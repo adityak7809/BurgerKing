@@ -13,6 +13,7 @@ import com.BurgerKing.objectRepo.SavedAddressesPage;
 import Utilities.AndroidUtility;
 import Utilities.BaseClass;
 import Utilities.ListenerImplementation;
+import Utilities.UtilityClassObject;
 
 /*
  * Update Saved Address Details
@@ -30,6 +31,7 @@ public class a_UpdateSavedAddressDetails_Test extends BaseClass{
 		androidUtility = new AndroidUtility(driver);
 		
 //		click on Delivery
+		UtilityClassObject.getTest().info("Click on Delivery button");
 		homePageObj.getDeliveryButton().click();
 		
 //		click on Menu button
