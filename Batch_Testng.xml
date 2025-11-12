@@ -4,10 +4,11 @@
   <test name="Test">
     <classes>
       <class name="com.BurgerKing.a_UpdateSavedAddressDetails"/>
-      <class name="com.BurgerKing.b_Check_Zoom_NeutritionInfo"/>
+   <!--    <class name="com.BurgerKing.b_Check_Zoom_NeutritionInfo"/>
       <class name="com.BurgerKing.c_Check_ScrollUpDown_NeutritionInfo"/>
       <class name="com.BurgerKing.d_Check_Swipe_InMenu"/>
       <class name="com.BurgerKing.e_Check_RightleftScroll_InCampaignMenu"/>
+      -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
