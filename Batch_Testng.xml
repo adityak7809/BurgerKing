@@ -3,9 +3,9 @@
 <suite name="BatchExecution_Suite">
   <test name="Test">
     <classes>
-      <class name="com.BurgerKing.a_UpdateSavedAddressDetails_Test"/>
-   <!--    <class name="com.BurgerKing.b_Check_Zoom_NeutritionInfo_Test"/>
-      <class name="com.BurgerKing.c_Check_ScrollUpDown_NeutritionInfo_Test"/>
+    <!--  <class name="com.BurgerKing.a_UpdateSavedAddressDetails_Test"/> --> 
+       <class name="com.BurgerKing.b_Check_Zoom_NeutritionInfo_Test"/>
+  <!-- <class name="com.BurgerKing.c_Check_ScrollUpDown_NeutritionInfo_Test"/>
       <class name="com.BurgerKing.d_Check_Swipe_InMenu_Test"/>
       <class name="com.BurgerKing.e_Check_RightleftScroll_InCampaignMenu_Test"/>
       -->
