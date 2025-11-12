@@ -38,7 +38,7 @@ public class b_Check_Zoom_NeutritionInfo_Test extends BaseClass {
 		
 		
 //		click on Neutrition Infor
-		hamBurgerPage.getNeutritionInfoButton().click();
+		hamBurgerPage.getNutritionInfoButton().click();
 		
 //      Zoom in and Zoom Out the info
 		// Zoom in-------------------

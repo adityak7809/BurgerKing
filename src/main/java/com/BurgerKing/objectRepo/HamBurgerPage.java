@@ -30,7 +30,7 @@ public class HamBurgerPage {
 	private WebElement legalTermsButton;
 	
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Nutrition Info\")")
-	private WebElement neutritionInfoButton;
+	private WebElement nutritionInfoButton;
 	
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"FSSAI\")")
 	private WebElement fssaiButton;
@@ -90,8 +90,8 @@ public class HamBurgerPage {
 
 
 
-	public WebElement getNeutritionInfoButton() {
-		return neutritionInfoButton;
+	public WebElement getNutritionInfoButton() {
+		return nutritionInfoButton;
 	}
 
 

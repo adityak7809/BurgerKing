@@ -14,10 +14,11 @@ import Utilities.AndroidUtility;
 import Utilities.BaseClass;
 import Utilities.GestureUtility;
 import Utilities.ListenerImplementation;
-
+import Utilities.UtilityClassObject;
 
 @Listeners(ListenerImplementation.class)
 public class c_Check_ScrollUpDown_NeutritionInfo_Test extends BaseClass {
+
 	
 	@Test
 	public void neutritionInfo() throws MalformedURLException, InterruptedException {
@@ -30,15 +31,20 @@ public class c_Check_ScrollUpDown_NeutritionInfo_Test extends BaseClass {
 		androidUtility = new AndroidUtility(driver);
 		
 //		click on Delivery
+		UtilityClassObject.getTest().info("Click on Delivery Button");
 		homePageObj.getDeliveryButton().click();
 		
 //		click on Menu button
+		UtilityClassObject.getTest().info("Wait for Main page to load");
 		androidUtility.waitForElementToLoad(homePageObj.getTopHeader());
+		
+		UtilityClassObject.getTest().info("Click on Hamburger button");
 		homePageObj.getHamBurgerButton();
 		
 		
-//		click on Neutrition Infor
-		hamBurgerPage.getNeutritionInfoButton().click();
+//		click on Nutrition Info
+		UtilityClassObject.getTest().info("Click on Nutrition button");
+		hamBurgerPage.getNutritionInfoButton().click();
 		
 		
 //      Scroll down and scroll up the info
@@ -51,10 +57,12 @@ public class c_Check_ScrollUpDown_NeutritionInfo_Test extends BaseClass {
 //			        "percent", 1.0
 //			    ));
 		
+		UtilityClassObject.getTest().info("Scroll up");
 		gestureUtility.scrollByCoordinate(100, 500, 600, 1000, "up", 1.0);
 		
 		Thread.sleep(2000);
 	
+		UtilityClassObject.getTest().info("Scroll down");
 		gestureUtility.scrollByCoordinate(100, 500, 600, 1000, "down", 1.0);
 		
 	}

@@ -13,10 +13,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
+import com.BurgerKing.objectRepo.HamBurgerPage;
 import com.BurgerKing.objectRepo.HomePage;
 import com.BurgerKing.objectRepo.NutritionInfoPage;
 import com.BurgerKing.objectRepo.SavedAddressesPage;
-import com.BurgerKing.objectRepo.HamBurgerPage;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
@@ -72,7 +72,7 @@ public class BaseClass {
 		cap.setCapability("noReset", true);
 
 		cap.setCapability("appPackage", fileUtility.readDataFromPropFile("appPackage"));
-
+		
 
 		URL url = new URL("http://localhost:4723");
 		driver = new AndroidDriver(url, cap);
@@ -80,10 +80,6 @@ public class BaseClass {
 		UtilityClassObject.setDriver(driver);
 
 		System.out.println("Application started=====>");
-
-		
-		
-
 	}
 
 	@BeforeMethod(groups = {"smoke", "regression"})
@@ -104,6 +100,7 @@ public class BaseClass {
 		androidUtility= new AndroidUtility(driver);
 		androidUtility.terminateApp(fileUtility.readDataFromPropFile("appPackage"));
 		System.out.println("Application closed=====>");
+		
 	}
 
 	@AfterSuite(groups = {"smoke", "regression"})
