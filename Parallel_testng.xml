@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ParallelExecution_Suite" thread-count="5">
+
+  <test name="Test1">
+  <parameter name="deviceName" value="OnePlus6T"/>
+  <parameter name="udid" value="adb-9a87fe1a-v92QA0._adb-tls-connect._tcp"/>
+  <parameter name="port" value="4723"/>
+    <classes>
+      <class name="com.BurgerKing.a_UpdateSavedAddressDetails"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="Test2">
+   <parameter name="deviceName" value="OnePlus6T"/>
+  <parameter name="udid" value="adb-9a87fe1a-v92QA0._adb-tls-connect._tcp"/>
+  <parameter name="port" value="4723"/>
+    <classes>
+      <class name="com.BurgerKing.b_Check_Zoom_NeutritionInfo"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="Test3">
+   <parameter name="deviceName" value="OnePlus6T"/>
+  <parameter name="udid" value="adb-9a87fe1a-v92QA0._adb-tls-connect._tcp"/>
+  <parameter name="port" value="4723"/>
+    <classes>
+      <class name="com.BurgerKing.c_Check_ScrollUpDown_NeutritionInfo"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="Test4">
+    <parameter name="deviceName" value="sdk_gphone64_x86_64"/>
+    <parameter name="udid" value="emulator-5554"/>
+    <classes>
+      <class name="com.BurgerKing.d_Check_Swipe_InMenu"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="Test5">
+    <parameter name="deviceName" value="sdk_gphone64_x86_64"/>
+    <parameter name="udid" value="emulator-5554"/>
+    <classes>
+      <class name="com.BurgerKing.e_Check_RightleftScroll_InCampaignMenu"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
